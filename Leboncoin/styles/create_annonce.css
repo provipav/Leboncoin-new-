@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 150px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+form{
+    width: 30%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+label, button{
+    font-weight: 600;
+}
+input, textarea, select, button{
+    height: 40px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+textarea{
+    height: 100px;
+    resize: none;
+}
+option{
+    color: #ff6e14;
+}
+div.prix{
+    position: relative;
+}
+.prix input{
+    width: 100%;
+    padding-right: 30px;
+}
+.prix span{
+    position: absolute;
+    bottom: 50%;
+    right: 20px;
+    color: gray;
+}
+button{
+    background-color: #4183d7;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+div.image{
+    max-width: 700px;
+}
+.image img{
+    width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button:hover{
+    background-color: #336699;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    div.image{
+        display: none;
+    }
+    form{
+        width: 80%;
+        min-width: 0;
+    }
+}

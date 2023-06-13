@@ -1,0 +1,87 @@
+main#annonce{
+    padding: 0 10%;
+}
+section.annonce{
+    display: flex;
+    gap: 100px;
+}
+h1{
+    font-size: 2em;
+}
+.prix{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.date{
+    color: rgb(151, 151, 151);
+}
+p{
+    font-size: 1.1em;
+}
+.user{
+    margin-bottom: 1rem;
+}
+.user i{
+    font-size: 2em;
+    color: rgb(175, 175, 175);
+}
+.user span{
+    font-size: 1.3em;
+    vertical-align: super;
+    margin-left: 5px;
+}
+
+.send-message{
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    background-color: #4183d7;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+    margin-bottom: 40px;
+}
+.send-message:hover{
+    background-color: #336699;
+}
+
+/* carousel */
+.imgContainer{
+    min-width: 400px;
+    height: 500px;
+    position: relative;
+}
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+}
+img.active{
+    opacity: 1;
+    transition: .5s;
+}
+
+.preceed, .next{
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.preceed{
+    left: -50px;
+}
+.next{
+    right: -50px;
+}
+.imgContainer i{
+    color: gainsboro;
+    transition: .2s;
+    cursor: pointer;
+}
+.imgContainer i:hover{
+    color: #4183d7;
+}
